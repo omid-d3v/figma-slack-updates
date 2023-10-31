@@ -1,11 +1,4 @@
 {
-  "env": [
-    "FIGMA_PERSONAL_ACCESS_TOKEN",
-    "FIGMA_FILE_KEY",
-    "SLACK_TEAM_ID",
-    "SLACK_USER_ID",
-    "SLACK_CHANNEL_ID"
-  ],
   "builds": [
     {
       "src": "vercel-build.js",
