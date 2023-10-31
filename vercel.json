@@ -11,14 +11,14 @@
   ],
   "builds": [
     {
-      "src": "vercel-build.js", // Specify your build script or entry point
-      "use": "@vercel/node" // Use the Node.js runtime for your project
+      "src": "vercel-build.js",
+      "use": "@vercel/node"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "vercel-build.js" // Point all requests to your build script
+      "dest": "vercel-build.js"
     }
   ]
 }
