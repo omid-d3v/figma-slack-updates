@@ -1,14 +1,14 @@
 {
   "builds": [
-    {
-      "src": "vercel-build.js",
-      "use": "@vercel/node"
-    }
+      {
+          "src": "update.py",
+          "use": "@vercel/python"
+      }
   ],
   "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "vercel-build.js"
-    }
+      {
+          "src": "/(.*)",
+          "dest": "update.py"
+      }
   ]
 }
