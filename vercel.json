@@ -1,14 +1,14 @@
 {
   "builds": [
-      {
-          "src": "update.py",
-          "use": "@vercel/python"
-      }
+    {
+      "src": "update.py",
+      "use": "@vercel/python"
+    }
   ],
   "routes": [
-      {
-          "src": "/(.*)",
-          "dest": "update.py"
-      }
+    {
+      "src": "/(.*)",
+      "dest": "update.py"
+    }
   ]
 }
