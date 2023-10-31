@@ -1,0 +1,24 @@
+{
+  "name": "Figma Slack updates",
+  "description": "Post updates to Slack from a Figma file's version history",
+  "repository": "https://github.com/jordansinger/figma-slack-updates",
+  "env": [
+    "FIGMA_PERSONAL_ACCESS_TOKEN",
+    "FIGMA_FILE_KEY",
+    "SLACK_TEAM_ID",
+    "SLACK_USER_ID",
+    "SLACK_CHANNEL_ID"
+  ],
+  "builds": [
+    {
+      "src": "vercel-build.js", // Specify your build script or entry point
+      "use": "@vercel/node" // Use the Node.js runtime for your project
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "vercel-build.js" // Point all requests to your build script
+    }
+  ]
+}
